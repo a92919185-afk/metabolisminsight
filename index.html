@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMA7 Capsules – Natural Metabolism Support Formula | Weight Balance</title>
+    <meta name="title" content="SEMA7 Capsules – Natural Metabolism Support Formula | Weight Balance">
+    <meta name="description"
+        content="SEMA7 capsules – natural metabolism support supplement. 30 capsules, 464mg daily dose. Support weight balance, reduce cravings and boost energy naturally. 60-day guarantee.">
+    <meta name="keywords"
+        content="SEMA7, metabolism support, weight balance, natural supplement, capsules, energy boost, appetite control, fat burning, digestive health">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="SEMA7 Research">
+    <link rel="canonical" href="https://sema7-metabolism.vercel.app/">
+    <link rel="alternate" hreflang="en" href="https://sema7-metabolism.vercel.app/">
+    <link rel="alternate" hreflang="x-default" href="https://sema7-metabolism.vercel.app/">
+
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://sema7-metabolism.vercel.app/">
+    <meta property="og:title" content="SEMA7 – Natural Metabolism Support Formula">
+    <meta property="og:description"
+        content="SEMA7 natural metabolism support capsules. 30 capsules per pack. Support weight balance, reduce cravings and boost daily energy. Order now with fast delivery.">
+    <meta property="og:site_name" content="SEMA7">
+
+    <script type="application/ld+json">
+    [{
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "SEMA7 Metabolism Support Formula",
+        "description": "Natural metabolism support supplement with 464mg daily dose. 30 capsules per pack.",
+        "brand": {"@type": "Brand", "name": "SEMA7"},
+        "sku": "SEMA7-EN-01",
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "34.00",
+            "highPrice": "59.00",
+            "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "4312"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "Is SEMA7 safe?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. SEMA7 is made from 100% natural ingredients and produced in a GMP-certified facility. Consult your doctor if you are taking medication."}},
+            {"@type": "Question", "name": "How quickly will I see results?", "acceptedAnswer": {"@type": "Answer", "text": "Most users notice improvements in energy and wellbeing within 3–6 weeks. Optimal results typically occur after 60–90 days of consistent daily use."}},
+            {"@type": "Question", "name": "How do I take SEMA7?", "acceptedAnswer": {"@type": "Answer", "text": "Take 1 capsule daily with a meal and a glass of water. Do not exceed the recommended daily dose of 464mg (1 capsule)."}},
+            {"@type": "Question", "name": "Is there a money-back guarantee?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we offer a full 60-day money-back guarantee. If you're not satisfied for any reason, contact our support team for a full refund — no questions asked."}},
+            {"@type": "Question", "name": "Is SEMA7 suitable for vegetarians?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, SEMA7 contains only plant-based ingredients and is suitable for a vegetarian diet."}},
+            {"@type": "Question", "name": "Where do you deliver?", "acceptedAnswer": {"@type": "Answer", "text": "We deliver to the UK, Ireland, France, Belgium and Switzerland. Delivery takes 3–5 business days."}},
+            {"@type": "Question", "name": "Can I combine SEMA7 with other supplements?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, SEMA7 can generally be combined with other supplements. If you are taking prescription medication, please consult your doctor first."}}
+        ]
+    }]
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            red: '#d32f2f',
+                            redDark: '#b71c1c',
+                            redLight: '#ef5350',
+                            gray: '#f5f5f5',
+                            grayMid: '#e0e0e0',
+                            dark: '#1a1a1a',
+                            text: '#333333',
+                            muted: '#757575',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 5vh;
+            backdrop-filter: blur(4px);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .faq-item .faq-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+
+        .faq-item.open .faq-body {
+            max-height: 500px;
+        }
+
+        .faq-item .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .btn-cta {
+            background: #d32f2f;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn-cta:hover {
+            background: #b71c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(211, 47, 47, 0.35);
+        }
+
+        .feature-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        #sticky-cta-mobile {
+            display: none;
+        }
+
+        @media (max-width:768px) {
+            #sticky-cta-mobile {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <!-- 1. ALERT BAR -->
+    <div class="bg-brand-red text-white py-2.5 text-center text-xs md:text-sm font-semibold tracking-wide uppercase">
+        <div class="max-w-6xl mx-auto px-4 flex items-center justify-center gap-4 md:gap-8 flex-wrap">
+            <span><i class="fa-solid fa-truck-fast mr-1.5"></i> Fast Delivery 3–5 Days</span>
+            <span class="hidden md:inline">|</span>
+            <span><i class="fa-solid fa-shield-halved mr-1.5"></i> 60-Day Money-Back Guarantee</span>
+            <span class="hidden md:inline">|</span>
+            <span><i class="fa-solid fa-leaf mr-1.5"></i> 100% Natural</span>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 md:px-8 flex items-center justify-between h-16">
+            <div class="flex items-center gap-3">
+                <img src="images/sema7-logo.webp" alt="SEMA7 Logo" class="h-8 w-auto">
+            </div>
+            <div class="hidden md:flex items-center gap-6">
+                <a href="#benefits" class="text-sm font-medium text-gray-600 hover:text-brand-red transition">How It
+                    Works</a>
+                <a href="#features"
+                    class="text-sm font-medium text-gray-600 hover:text-brand-red transition">Ingredients</a>
+                <a href="#reviews" class="text-sm font-medium text-gray-600 hover:text-brand-red transition">Reviews</a>
+                <a href="#faq" class="text-sm font-medium text-gray-600 hover:text-brand-red transition">FAQ</a>
+            </div>
+            <a href="https://myblogshop.top/r/Y58HNVG2/s" class="btn-cta px-5 py-2.5 text-sm uppercase" target="_blank"
+                rel="noopener noreferrer">
+                Order Now <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- 3. HERO SECTION -->
+    <section class="bg-brand-gray overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-brand-red hidden lg:block"
+            style="clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);"></div>
+
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-14 md:py-20 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+                <div class="flex-1 text-center lg:text-left order-1">
+                    <p class="text-brand-red text-xs font-bold tracking-widest uppercase mb-4">Metabolism Support
+                        Formula*</p>
+                    <h1
+                        class="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.1] mb-6 text-brand-dark break-words">
+                        Stop Fighting Your<br>Metabolism.<br><span class="text-brand-red">Support It.</span>
+                    </h1>
+
+                    <!-- Mobile Image -->
+                    <div class="block lg:hidden w-full max-w-[340px] mx-auto my-8">
+                        <img src="images/sema7-hero.webp" alt="SEMA7 Metabolism Support Formula Pack"
+                            class="w-full h-auto drop-shadow-2xl" fetchpriority="high" decoding="sync"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display:none"
+                            class="w-full aspect-[4/3] bg-white rounded-xl flex flex-col items-center justify-center text-gray-400 shadow-lg border border-gray-200">
+                            <span class="text-brand-red text-3xl font-extrabold italic">S7</span>
+                            <p class="text-sm mt-1 font-semibold">Metabolism Support</p>
+                        </div>
+                    </div>
+
+                    <p class="text-brand-text text-lg leading-relaxed mb-4 max-w-xl mx-auto lg:mx-0">
+                        Your metabolism determines how efficiently your body uses energy. SEMA7 supports you with a
+                        scientifically formulated blend — <strong>1 capsule per day, 464mg daily dose, 30 capsules per
+                            pack.</strong>
+                    </p>
+                    <p class="text-brand-muted text-base leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
+                        Fewer cravings. More energy. Natural ingredients. No stimulants. No crash.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-6">
+                        <a href="https://myblogshop.top/r/Y58HNVG2/s"
+                            class="btn-cta w-full sm:w-auto text-lg px-10 py-5 shadow-lg uppercase tracking-wide"
+                            target="_blank" rel="noopener noreferrer">
+                            Order Now <i class="fa-solid fa-cart-shopping ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Desktop Image -->
+                <div
+                    class="hidden lg:flex flex-shrink-0 order-2 items-center justify-center w-full max-w-[480px] relative z-20">
+                    <img src="images/sema7-hero.webp" alt="SEMA7 Metabolism Support Formula 30 Capsules"
+                        class="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)]" fetchpriority="high"
+                        decoding="sync"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display:none"
+                        class="w-full aspect-[4/3] bg-white rounded-xl flex flex-col items-center justify-center text-gray-400 shadow-lg border border-gray-200">
+                        <span class="text-brand-red text-5xl font-extrabold italic">S7</span>
+                        <p class="text-sm mt-2 font-semibold">Metabolism Support Formula</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Strip -->
+        <div class="bg-white border-t border-gray-200 py-4">
+            <div class="max-w-6xl mx-auto px-4 md:px-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
+                <div class="flex flex-col items-center gap-1">
+                    <i class="fa-solid fa-truck-fast text-brand-red text-lg"></i>
+                    <p class="font-bold text-brand-dark">Fast Delivery</p>
+                    <p class="text-xs text-brand-muted">Within 3–5 business days</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <i class="fa-solid fa-headset text-brand-red text-lg"></i>
+                    <p class="font-bold text-brand-dark">24/7 Support</p>
+                    <p class="text-xs text-brand-muted">English-speaking team</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <i class="fa-solid fa-lock text-brand-red text-lg"></i>
+                    <p class="font-bold text-brand-dark">Safety First</p>
+                    <p class="text-xs text-brand-muted">Encrypted checkout</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <i class="fa-solid fa-leaf text-brand-red text-lg"></i>
+                    <p class="font-bold text-brand-dark">100% Natural</p>
+                    <p class="text-xs text-brand-muted">Clean &amp; additive-free</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SOCIAL PROOF STRIP -->
+    <section class="bg-white py-10 border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <p class="text-3xl font-extrabold text-brand-dark">4,312+</p>
+                    <p class="text-sm text-brand-muted mt-1">Verified Reviews</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-extrabold text-brand-dark">4.8<span class="text-brand-red">★</span></p>
+                    <p class="text-sm text-brand-muted mt-1">Average Rating</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-extrabold text-brand-dark">92%</p>
+                    <p class="text-sm text-brand-muted mt-1">Report More Energy</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-extrabold text-brand-dark">60 Days</p>
+                    <p class="text-sm text-brand-muted mt-1">Money-Back Guarantee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. BENEFITS -->
+    <section class="bg-white py-16 md:py-20" id="benefits">
+        <div class="max-w-4xl mx-auto px-4 md:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark mb-4">
+                A Smarter Way to Support Your <span class="text-brand-red">Metabolism</span>
+            </h2>
+            <p class="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed mb-4">
+                Your metabolism naturally slows down with age. SEMA7 is a natural supplement designed to support your
+                body's metabolic function — without stimulants, without crash, without extreme diets. It's not about
+                willpower. It's about giving your body the right support.
+            </p>
+            <p class="text-brand-muted text-base max-w-xl mx-auto mb-6">
+                1 capsule daily. 464mg of carefully selected natural ingredients. 30 capsules per pack.
+            </p>
+            <div
+                class="inline-flex items-center gap-2 bg-brand-red/10 text-brand-red font-bold text-sm px-5 py-2 rounded-full">
+                <i class="fa-solid fa-truck-fast"></i> Free shipping on 3+ packs
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FEATURES GRID -->
+    <section class="bg-brand-gray py-16 md:py-20" id="features">
+        <div class="max-w-6xl mx-auto px-4 md:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark text-center mb-12">
+                What SEMA7 Can Do for You
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="feature-card bg-white rounded-xl p-7 shadow-sm text-center">
+                    <div class="w-12 h-12 rounded-full bg-brand-red/10 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-fire text-brand-red text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark text-base mb-2">Metabolism Support</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">Supports an active metabolism and helps your
+                        body process nutrients more efficiently for natural weight balance.</p>
+                </div>
+                <div class="feature-card bg-white rounded-xl p-7 shadow-sm text-center">
+                    <div class="w-12 h-12 rounded-full bg-brand-red/10 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-bolt text-brand-red text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark text-base mb-2">Daily Energy Boost</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">Natural, sustained energy without caffeine or
+                        stimulants. Feel more active and focused throughout the day.</p>
+                </div>
+                <div class="feature-card bg-white rounded-xl p-7 shadow-sm text-center">
+                    <div class="w-12 h-12 rounded-full bg-brand-red/10 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-hand-holding-heart text-brand-red text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark text-base mb-2">Appetite Control</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">Helps reduce sugar cravings and supports
+                        healthier eating habits — without restriction or deprivation.</p>
+                </div>
+                <div class="feature-card bg-white rounded-xl p-7 shadow-sm text-center">
+                    <div class="w-12 h-12 rounded-full bg-brand-red/10 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-spa text-brand-red text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark text-base mb-2">Digestive Health</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">Promotes healthy digestion and helps reduce
+                        bloating and discomfort after meals.</p>
+                </div>
+                <div class="feature-card bg-white rounded-xl p-7 shadow-sm text-center">
+                    <div class="w-12 h-12 rounded-full bg-brand-red/10 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-scale-balanced text-brand-red text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark text-base mb-2">Healthy Weight Balance</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">Supports a balanced weight naturally — no
+                        extreme diets, no crash programmes, no empty promises.</p>
+                </div>
+                <div class="feature-card bg-white rounded-xl p-7 shadow-sm text-center">
+                    <div class="w-12 h-12 rounded-full bg-brand-red/10 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-shield-halved text-brand-red text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark text-base mb-2">100% Natural &amp; Safe</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">Manufactured in a GMP-certified facility with
+                        tested, natural ingredients. No artificial additives.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="https://myblogshop.top/r/Y58HNVG2/s" class="btn-cta px-10 py-5 text-lg uppercase shadow-lg"
+                    target="_blank" rel="noopener noreferrer">
+                    Order SEMA7 Now <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. REVIEWS -->
+    <section class="bg-white py-16 md:py-20" id="reviews">
+        <div class="max-w-6xl mx-auto px-4 md:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark text-center mb-4">Real People. Real Results.
+            </h2>
+            <p class="text-brand-muted text-center max-w-xl mx-auto mb-12">Over 4,300 verified reviews from SEMA7 users
+                across the UK, Ireland, France, Belgium and Switzerland.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-brand-gray rounded-xl p-7 border border-gray-100">
+                    <div class="flex text-brand-red text-lg mb-3">★★★★★</div>
+                    <p class="text-gray-700 text-sm leading-relaxed italic mb-5">"I've lost 4kg in 6 weeks without
+                        drastically changing my diet. My energy levels are noticeably higher. Finally something that
+                        actually works."</p>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-9 h-9 rounded-full bg-brand-red flex items-center justify-center text-white font-bold text-sm">
+                            S</div>
+                        <div>
+                            <p class="font-semibold text-brand-dark text-sm">Sarah M.</p>
+                            <p class="text-xs text-brand-muted">London · Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-brand-gray rounded-xl p-7 border border-gray-100">
+                    <div class="flex text-brand-red text-lg mb-3">★★★★★</div>
+                    <p class="text-gray-700 text-sm leading-relaxed italic mb-5">"As a consultant, I sit all day. Since
+                        taking SEMA7, I have fewer cravings and I don't feel that afternoon slump anymore. It's been
+                        brilliant."</p>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-9 h-9 rounded-full bg-brand-red flex items-center justify-center text-white font-bold text-sm">
+                            D</div>
+                        <div>
+                            <p class="font-semibold text-brand-dark text-sm">David K.</p>
+                            <p class="text-xs text-brand-muted">Dublin · Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-brand-gray rounded-xl p-7 border border-gray-100">
+                    <div class="flex text-brand-red text-lg mb-3">★★★★★</div>
+                    <p class="text-gray-700 text-sm leading-relaxed italic mb-5">"I was sceptical, but the 60-day
+                        guarantee convinced me. After 5 weeks, I feel lighter and my bloating has improved
+                        significantly."</p>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-9 h-9 rounded-full bg-brand-red flex items-center justify-center text-white font-bold text-sm">
+                            E</div>
+                        <div>
+                            <p class="font-semibold text-brand-dark text-sm">Emma W.</p>
+                            <p class="text-xs text-brand-muted">Manchester · Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-brand-dark text-white rounded-2xl p-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <p class="text-4xl font-extrabold text-brand-red mb-1">92%</p>
+                        <p class="text-gray-300 text-sm">Report more energy after 4 weeks</p>
+                    </div>
+                    <div>
+                        <p class="text-4xl font-extrabold text-brand-red mb-1">89%</p>
+                        <p class="text-gray-300 text-sm">Fewer cravings and snacking</p>
+                    </div>
+                    <div>
+                        <p class="text-4xl font-extrabold text-brand-red mb-1">87%</p>
+                        <p class="text-gray-300 text-sm">Would recommend SEMA7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FAQ -->
+    <section class="bg-brand-gray py-16 md:py-20" id="faq">
+        <div class="max-w-3xl mx-auto px-4 md:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark text-center mb-12">Frequently Asked Questions
+            </h2>
+            <div class="space-y-0 divide-y divide-gray-200 border border-gray-200 rounded-xl overflow-hidden bg-white">
+                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between px-6 py-5 hover:bg-gray-50 transition">
+                        <h3 class="font-semibold text-brand-dark text-base">Is SEMA7 safe to take?</h3><span
+                            class="faq-icon text-brand-dark font-light text-2xl leading-none ml-4 flex-shrink-0">+</span>
+                    </div>
+                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed">
+                        <div class="py-4">Yes. SEMA7 is made from 100% natural ingredients and manufactured in a
+                            GMP-certified facility to European standards. If you are taking medication or have any
+                            health concerns, please consult your doctor before use.</div>
+                    </div>
+                </div>
+                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between px-6 py-5 hover:bg-gray-50 transition">
+                        <h3 class="font-semibold text-brand-dark text-base">How quickly will I see results?</h3><span
+                            class="faq-icon text-brand-dark font-light text-2xl leading-none ml-4 flex-shrink-0">+</span>
+                    </div>
+                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed">
+                        <div class="py-4">Most users notice improvements in energy and overall wellbeing within 3–6
+                            weeks. Optimal results are typically achieved after 60–90 days of consistent daily use.
+                            Every body is different — patience is key.</div>
+                    </div>
+                </div>
+                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between px-6 py-5 hover:bg-gray-50 transition">
+                        <h3 class="font-semibold text-brand-dark text-base">How do I take SEMA7?</h3><span
+                            class="faq-icon text-brand-dark font-light text-2xl leading-none ml-4 flex-shrink-0">+</span>
+                    </div>
+                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed">
+                        <div class="py-4">Take 1 capsule daily with a meal and a glass of water. For best results, we
+                            recommend consistent use over at least 60 days. Do not exceed the recommended daily dose of
+                            464mg (1 capsule).</div>
+                    </div>
+                </div>
+                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between px-6 py-5 hover:bg-gray-50 transition">
+                        <h3 class="font-semibold text-brand-dark text-base">Is there a money-back guarantee?</h3><span
+                            class="faq-icon text-brand-dark font-light text-2xl leading-none ml-4 flex-shrink-0">+</span>
+                    </div>
+                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed">
+                        <div class="py-4">Yes! We offer a full 60-day money-back guarantee. If you're not satisfied for
+                            any reason, contact our customer support team and we'll refund your full purchase price — no
+                            questions asked.</div>
+                    </div>
+                </div>
+                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between px-6 py-5 hover:bg-gray-50 transition">
+                        <h3 class="font-semibold text-brand-dark text-base">Is SEMA7 suitable for vegetarians?</h3><span
+                            class="faq-icon text-brand-dark font-light text-2xl leading-none ml-4 flex-shrink-0">+</span>
+                    </div>
+                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed">
+                        <div class="py-4">Yes, SEMA7 contains only plant-based ingredients and is suitable for a
+                            vegetarian diet. The capsule shell is also made from plant-based material.</div>
+                    </div>
+                </div>
+                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between px-6 py-5 hover:bg-gray-50 transition">
+                        <h3 class="font-semibold text-brand-dark text-base">Where do you deliver and how long does it
+                            take?</h3><span
+                            class="faq-icon text-brand-dark font-light text-2xl leading-none ml-4 flex-shrink-0">+</span>
+                    </div>
+                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed">
+                        <div class="py-4">We deliver to the UK, Ireland, France, Belgium and Switzerland. Delivery takes
+                            3–5 business days in discreet packaging. All orders include tracked shipping.</div>
+                    </div>
+                </div>
+                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between px-6 py-5 hover:bg-gray-50 transition">
+                        <h3 class="font-semibold text-brand-dark text-base">Can I combine SEMA7 with other supplements?
+                        </h3><span
+                            class="faq-icon text-brand-dark font-light text-2xl leading-none ml-4 flex-shrink-0">+</span>
+                    </div>
+                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed">
+                        <div class="py-4">Yes, SEMA7 can generally be combined with other dietary supplements without
+                            issues. If you are taking prescription medication, we recommend consulting your doctor or
+                            pharmacist first.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO TEXT BLOCK -->
+    <section class="bg-white py-14 border-t border-gray-200 text-sm text-gray-700 leading-relaxed"
+        id="product-information">
+        <div class="max-w-5xl mx-auto px-4 md:px-8 space-y-6">
+            <div>
+                <h2 class="text-xl font-bold text-brand-dark mb-3">SEMA7 Capsules – Natural Metabolism Support
+                    Supplement</h2>
+                <p><strong>SEMA7</strong> is a <strong>natural supplement</strong> in <strong>capsule</strong> form,
+                    specifically designed for adults who want to support their <strong>metabolism</strong> naturally.
+                    Each pack contains <strong>30 capsules</strong> with a daily dose of <strong>464mg</strong> per
+                    capsule. Taking SEMA7 is simple: 1 capsule daily with a meal and a glass of water. SEMA7 is
+                    recommended as a complement to a <strong>balanced diet</strong> and regular exercise — not a
+                    replacement for a healthy lifestyle.</p>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold text-brand-dark mb-3">Natural Ingredients &amp; Scientific Formulation</h2>
+                <p>The <strong>ingredients</strong> in SEMA7 include carefully selected <strong>amino acids</strong>,
+                    plant extracts and essential nutrients. The formula is based entirely on <strong>natural
+                        ingredients</strong> — completely free from <strong>caffeine</strong> and artificial stimulants.
+                    SEMA7's formulation was developed so that specific ingredients work synergistically to support
+                    <strong>metabolism</strong>, <strong>energy</strong> production and <strong>weight balance</strong>.
+                </p>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold text-brand-dark mb-3">How to Take SEMA7 – Dosage &amp; Usage</h2>
+                <p>The recommended <strong>dosage</strong> is 1 <strong>capsule</strong> (464mg) daily, ideally with a
+                    meal. Many users start with one capsule and find it well-tolerated. For optimal results, we
+                    recommend consistent use over at least 60 days. SEMA7 works best as part of a <strong>healthy daily
+                        routine</strong> — a simple daily habit for <strong>metabolism support</strong>.</p>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold text-brand-dark mb-3">SEMA7 Reviews – What Real Users Say</h2>
+                <p>Thousands of users across the UK, Ireland and Europe report positive experiences with SEMA7. In
+                    verified <strong>reviews</strong>, users consistently highlight improved <strong>energy
+                        levels</strong>, reduced <strong>cravings</strong> and better <strong>digestive
+                        comfort</strong>. SEMA7 is particularly recommended for adults over 35 looking for a natural,
+                    sustainable approach to <strong>weight management</strong>. Most users describe SEMA7 as a
+                    trustworthy, transparent supplement.</p>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold text-brand-dark mb-3">Safety, Tolerability &amp; Side Effects</h2>
+                <p>SEMA7 is well-tolerated by the vast majority of users. Because it is based on <strong>natural,
+                        plant-based ingredients</strong>, <strong>side effects</strong> are rare. Individuals with known
+                    allergies to specific ingredients should not take SEMA7 without consulting a doctor first. SEMA7 is
+                    <strong>not suitable</strong> for pregnant or breastfeeding women, or children under 18. If you take
+                    prescription medication, please consult your healthcare provider.</p>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold text-brand-dark mb-3">Why Choose SEMA7 – Benefits &amp; Comparison</h2>
+                <p>A key <strong>advantage of SEMA7</strong> is its simplicity: one capsule, once a day, with
+                    high-quality natural ingredients. Compared to other metabolism supplements on the market, SEMA7
+                    stands out through its transparency, clean formulation and strong <strong>customer
+                        satisfaction</strong>. SEMA7 is not available in retail stores — it is exclusively available
+                    online with fast delivery across the UK, Ireland, France, Belgium and Switzerland. Backed by a
+                    <strong>60-day money-back guarantee</strong>, SEMA7 is the smarter choice for <strong>sustainable
+                        weight balance</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer class="bg-brand-dark text-gray-400">
+        <div class="max-w-5xl mx-auto px-4 md:px-8 py-10">
+            <div class="flex flex-wrap justify-center gap-6 mb-8 text-sm">
+                <button onclick="openModal('contactModal')" class="hover:text-white transition">Contact</button>
+                <button onclick="openModal('termsModal')" class="hover:text-white transition">Terms &amp;
+                    Conditions</button>
+                <button onclick="openModal('privacyModal')" class="hover:text-white transition">Privacy Policy</button>
+                <button onclick="openModal('returnsModal')" class="hover:text-white transition">Returns</button>
+            </div>
+            <div class="text-center text-[11px] text-gray-500 leading-relaxed max-w-3xl mx-auto space-y-3">
+                <p>The statements on this website have not been evaluated by any regulatory authority. This product is
+                    not intended to diagnose, treat, cure or prevent any disease.</p>
+                <p>The content and product offered on this website are based on the author's opinion and are provided on
+                    an "AS IS" and "AS AVAILABLE" basis. You should conduct your own research and cross-reference
+                    information with other sources.</p>
+                <p class="text-[11px] text-gray-400 font-bold mt-4 border border-gray-700 p-4 rounded-lg bg-white/5">
+                    IMPORTANT NOTICE: We are an independent distributor (advertising partner) and NOT the manufacturer
+                    of this product. All sales are processed by the official manufacturer. We receive a commission for
+                    purchases made through the links on this website.
+                </p>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-xs text-gray-600">
+                &copy; SEMA7 Research 2025. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+    <div id="contactModal" class="modal p-4">
+        <div class="bg-white rounded-xl w-full max-w-lg max-h-[80vh] flex flex-col shadow-2xl">
+            <div class="p-6 border-b border-gray-100 flex justify-between items-center">
+                <h3 class="font-bold text-xl text-brand-dark">Contact Us</h3><button onclick="closeModals()"
+                    class="text-gray-400 hover:text-brand-dark text-xl"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-6 overflow-y-auto text-sm text-gray-600 leading-relaxed space-y-3">
+                <p>For questions about your order, delivery or our 60-day guarantee, please reach out to our customer
+                    support team.</p>
+                <p><strong>Email:</strong> <a href="mailto:support@sema7.com"
+                        class="text-brand-red hover:underline">support@sema7.com</a></p>
+                <p>Our support team typically responds within 24 business hours, Monday to Friday.</p>
+            </div>
+        </div>
+    </div>
+    <div id="termsModal" class="modal p-4">
+        <div class="bg-white rounded-xl w-full max-w-lg max-h-[80vh] flex flex-col shadow-2xl">
+            <div class="p-6 border-b border-gray-100 flex justify-between items-center">
+                <h3 class="font-bold text-xl text-brand-dark">Terms &amp; Conditions</h3><button onclick="closeModals()"
+                    class="text-gray-400 hover:text-brand-dark text-xl"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-6 overflow-y-auto text-sm text-gray-600 leading-relaxed space-y-3">
+                <p><strong>1. General:</strong> By purchasing SEMA7, you agree to these terms. You must be at least 18
+                    years old.</p>
+                <p><strong>2. Product Use:</strong> SEMA7 is a dietary supplement. It is not intended to diagnose,
+                    treat, cure or prevent any disease.</p>
+                <p><strong>3. Orders:</strong> All orders are subject to product availability. Prices may change without
+                    notice.</p>
+                <p><strong>4. Intellectual Property:</strong> All content, logos and formulations are the property of
+                    SEMA7 Research.</p>
+            </div>
+        </div>
+    </div>
+    <div id="privacyModal" class="modal p-4">
+        <div class="bg-white rounded-xl w-full max-w-lg max-h-[80vh] flex flex-col shadow-2xl">
+            <div class="p-6 border-b border-gray-100 flex justify-between items-center">
+                <h3 class="font-bold text-xl text-brand-dark">Privacy Policy (GDPR)</h3><button onclick="closeModals()"
+                    class="text-gray-400 hover:text-brand-dark text-xl"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-6 overflow-y-auto text-sm text-gray-600 leading-relaxed space-y-3">
+                <p><strong>1. Data Collection:</strong> We collect personal data solely for order processing, customer
+                    support and service improvement. We comply with GDPR.</p>
+                <p><strong>2. Usage:</strong> Your data is never sold to third parties. It is used exclusively for
+                    purchase processing and essential product communications.</p>
+                <p><strong>3. Security:</strong> All transactions are SSL-encrypted and processed through trusted,
+                    PCI-compliant payment providers.</p>
+                <p><strong>4. Your Rights:</strong> You can request access, correction or deletion of your data at any
+                    time by contacting support@sema7.com.</p>
+            </div>
+        </div>
+    </div>
+    <div id="returnsModal" class="modal p-4">
+        <div class="bg-white rounded-xl w-full max-w-lg max-h-[80vh] flex flex-col shadow-2xl">
+            <div class="p-6 border-b border-gray-100 flex justify-between items-center">
+                <h3 class="font-bold text-xl text-brand-dark">Returns &amp; 60-Day Guarantee</h3><button
+                    onclick="closeModals()" class="text-gray-400 hover:text-brand-dark text-xl"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-6 overflow-y-auto text-sm text-gray-600 leading-relaxed space-y-3">
+                <p><strong>60-Day Money-Back Guarantee:</strong> We stand 100% behind SEMA7. If you use SEMA7 as
+                    recommended for 60 days and are not fully satisfied, contact our support team for a full refund — no
+                    questions asked.</p>
+                <p><strong>Return Process:</strong> Contact support@sema7.com to initiate a return. Original shipping
+                    costs are non-refundable.</p>
+                <p><strong>Damaged Items:</strong> If your order arrives damaged, please report it within 48 hours of
+                    delivery with a photo for immediate replacement.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Sticky CTA -->
+    <div id="sticky-cta-mobile"
+        class="fixed bottom-0 left-0 right-0 z-50 bg-brand-dark p-3 shadow-2xl border-t border-white/10 items-center justify-center gap-3">
+        <a href="https://myblogshop.top/r/Y58HNVG2/s"
+            class="btn-cta w-full max-w-sm py-4 rounded-lg text-sm uppercase text-center" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa-solid fa-cart-shopping mr-2"></i> ORDER NOW – 60-Day Guarantee
+        </a>
+    </div>
+
+    <script>
+        function toggleFaq(el) {
+            const isOpen = el.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(item => item.classList.remove('open'));
+            if (!isOpen) el.classList.add('open');
+        }
+        function openModal(id) { document.getElementById(id).classList.add('active'); }
+        function closeModals() { document.querySelectorAll('.modal.active').forEach(m => m.classList.remove('active')); }
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', function (e) { if (e.target === this) closeModals(); });
+        });
+    </script>
+</body>
+
+</html>
